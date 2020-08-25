@@ -27,7 +27,25 @@ function myFunction() {
             var promedio = (mateMedia + fisiMedia + cienciaMedia)/3;
             var promAprox = Math.round(promedio);
             alert(promAprox);
+            break;
         case 4:
+            var frutas = [];
+
+            do {
+                frutas.push(prompt("Ingrese el nombre de una fruta"));
+                alert(frutas);
+            } while (frutas.length <= 2);
+            
+            var noApple;
+
+            for (noApple of frutas) {
+            if (noApple != "manzana") {
+                console.log(noApple);
+            } else {
+             continue }
+            };
+            break;
+
             
             
         
