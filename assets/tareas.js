@@ -21,9 +21,16 @@ function myFunction() {
             } while (caso2 !== "blanco");
             break; 
         case 3:    
-            var mateMedia = prompt("Ingrese su promedio de matemáticas");
-            var fisimedia = prompt("Ingrese su promedio de física");
-            var cienciaMedia = prompt("Ingrese su promedio de ciencias");
+            var mateMedia = parseInt(prompt("Ingrese su promedio de matemáticas"));
+            var fisiMedia = parseInt(prompt("Ingrese su promedio de física"));
+            var cienciaMedia = parseInt(prompt("Ingrese su promedio de ciencias"));
+            var promedio = (mateMedia + fisiMedia + cienciaMedia)/3;
+            var promAprox = Math.round(promedio);
+            alert(promAprox);
+        case 4:
+            
+            
+        
 
         }
 
