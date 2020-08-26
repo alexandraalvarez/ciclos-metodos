@@ -2,7 +2,7 @@ function init(){
 }
     
 function myFunction() {
-    var number = parseInt(prompt("Ingrese un numero del 1 al 6"));
+    var number = parseInt(prompt("Ingrese un numero del 1 al 5"));
     
     switch(number) {
         case 1:
@@ -14,10 +14,9 @@ function myFunction() {
             break;
         case 2:
             do {
-                var caso2str = prompt("¿De qué color es el caballo blanco de Napoleón?");
-                alert(caso2str);
+                var caso2str = prompt("¿De qué color es el caballo blanco de Napoleón?"); 
                 var caso2 = caso2str.toLowerCase();
-                alert(caso2);
+               
             } while (caso2 !== "blanco");
             break; 
         case 3:    
@@ -33,10 +32,10 @@ function myFunction() {
 
             do {
                 frutas.push(prompt("Ingrese el nombre de una fruta"));
-                alert(frutas);
+
             } while (frutas.length <= 2);
             
-            var noApple;
+            var noApple; 
 
             for (noApple of frutas) {
             if (noApple != "manzana") {
@@ -45,12 +44,26 @@ function myFunction() {
              continue }
             };
             break;
+        case 5:
+            var name = prompt("Escribe tu nombre");
+            name = name.toLocaleLowerCase();
+            var vocal = [];
+            var consonante = [];
+            var letras;
 
-            
-            
-        
-
-        }
+            for (letras of name) {
+                if (letras == "a" || letras == "e" || letras == "i" || letras == "o" || letras == "u") {
+                    vocal.push(letras);
+                } else {
+                  consonante.push(letras);  
+                }
+            };
+            alert("Tu nombre tiene " + consonante.length + " letras y " + vocal.length + " vocales.");
+            break;
+        default:
+            alert("Ingresó un numero inválido, recargue la página e ingrese un numero entre 1 y 5");       
+            break;
+    }
 
 }
         
